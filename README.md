@@ -1,2 +1,2 @@
 # pair-programming-Fabiali
-Repo de pair programming de Rocio y Aliris Adalab
+Repo de pair programming de Fabiana, Valeria y Aliris Adalab
