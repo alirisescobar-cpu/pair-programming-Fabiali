@@ -51,3 +51,24 @@ cliente INT,
 		REFERENCES clientes (id_clientes)
 );
 
+CREATE TABLE clientes2 (
+    id_cliente INT AUTO_INCREMENT,
+    nombre VARCHAR(45),
+    email VARCHAR(45) UNIQUE,
+    fecha_registro DATE,
+    edad INT,
+    saldo DECIMAL(10,2) DEFAULT 0,
+    PRIMARY KEY (id_cliente),
+    CONSTRAINT ck_edad
+		CHECK (edad > 18)
+);
+
+/*CREATE TABLE clientes (
+    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    fecha_registro DATE DEFAULT (CURDATE()),
+    edad INT CHECK (edad > 18),
+    saldo DECIMAL(10,2) DEFAULT 0
+);*/
+-- mejor forma de hacerlo
